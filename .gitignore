@@ -1,36 +1,38 @@
+# Dependencies (any depth)
+node_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# production
-/dist
-/build
-
-# misc
-.DS_Store
-.env
-.env.*.local
-
-# TypeScript
+# Build / compiler output
+dist/
+build/
+out/
 *.tsbuildinfo
 
-# Logs
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+*.log
 
-# OS generated
+# Test coverage
+coverage/
+.nyc_output/
+
+# OS
+.DS_Store
 Thumbs.db
 Desktop.ini
 
-# Editor settings
+# Editors / IDEs
 .vscode/
 .idea/
 *.sublime-workspace
 *.sublime-project
 
-#cursor
-/.cursor
-
+# Cursor (local agent state; keep out of repo)
+.cursor/
